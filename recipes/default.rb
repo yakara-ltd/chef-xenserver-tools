@@ -56,8 +56,10 @@ systemd_service 'xe-linux-distribution' do
   notifies :restart, 'service[xe-linux-distribution]'
 
   service do
-    exec_start_pre '/usr/sbin/xe-linux-distribution /var/cache/xe-linux-distribution'
-    exec_start '/usr/sbin/xe-daemon'
+    exec_start_pre \
+      '/usr/sbin/xe-linux-distribution /var/cache/xe-linux-distribution'
+    exec_start \
+      '/usr/sbin/xe-daemon'
   end
 
   install do
