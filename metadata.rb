@@ -6,6 +6,9 @@ description      'Installs the XenServer Tools'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
+issues_url 'https://github.com/yakara-ltd/chef-xenserver-tools/issues'
+source_url 'https://github.com/yakara-ltd/chef-xenserver-tools'
+
 depends 'systemd'
 
 supports 'centos'
